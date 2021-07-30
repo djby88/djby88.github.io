@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <style>
+        body{
+            background-color: #e7e7e9;
+        }
+        p{
+            font-size: 2.5rem;
+        }
+        .img{
+            margin: 0 auto;
+            display: inline-block;
+        }
+        .center{
+            text-align: center;
+        }
+        span { 
+           font-size: 2.5rem;
+        }
+        .list {
+            border: 1px solid #e7e6ea;
+            background-color: #ffffff;
+            border-radius: 8px;
+            line-height: 6rem;
+            margin:1rem 0;
+        }
+        @media (max-width: 576px) {
+            span {
+                font-size: 0.6rem;
+            }
+            p {
+                font-size: 2rem;
+            }
+            .list {
+                line-height: 1.6rem;
+                margin: 0 -15px;
+            }
+            .logo {
+                width: 3rem;
+            }
+            .copy-img {
+                width: 7.1rem;
+            }
+            .link{
+                width: 9.2rem;
+            }
+            .col-xs-3{
+                padding:0.5rem 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div class="row">
+            <div class="col-xs-12 center">
+                <img src="./img/title.png" class="img-responsive img" alt="">
+                <p>Ctrl+D 即可轻松收藏</p>
+            </div>
+        </div>
+        <div class="row center list">
+            <div class="col-sm-8 col-xs-6">
+                <img src="./img/logo.png" class="logo" alt="">
+                <span>大奖官方地址 1 </span>
+                <span id="link1">www.dj8888a.com</span>
+            </div>
+            <div class="col-sm-2 col-xs-3">
+                <a href=""  class="copy" data-clipboard-target="#link1" ><img src="./img/copy.png"class="copy-img" alt=""></a>
+            </div>
+            <div class="col-sm-2 col-xs-3">
+                <a href="http://www.dj8888a.com"><img src="./img/link.png" class="link" alt=""></a>
+            </div>
+        </div>
+        <div class="row center list">
+            <div class="col-sm-8 col-xs-6">
+                <img src="./img/logo.png" class="logo" alt="">
+                <span>大奖官方地址 2 </span>
+                <span id="link2">www.dj8888b.com</span>
+            </div>
+            <div class="col-sm-2 col-xs-3">
+                <a href="" class="copy" data-clipboard-target="#link2" ><img src="./img/copy.png" class="copy-img" alt=""></a>
+            </div>
+            <div class="col-sm-2 col-xs-3">
+                <a href="http://www.dj8888b.com"><img src="./img/link.png" class="link" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var clipboard = new ClipboardJS('.copy');
+        clipboard.on('success' , function(e){
+            alert("复制成功");
+        })
+    </script>
+</body>
+</html>
