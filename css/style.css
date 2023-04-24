@@ -1,0 +1,126 @@
+body{
+    background-color: #e7e7e9;
+}
+#chat-widget-container {
+    top: 280px;
+    right: 2% !important;
+}
+.connect{
+    position: fixed;
+    font-size: 20px;
+    font-weight: bold;
+    top: 352px;
+    right: 2%;
+}
+p{
+    font-size: 2.5rem;
+}
+.img{
+    margin: 0 auto;
+    display: inline-block;
+}
+.center{
+    text-align: center;
+}
+span { 
+   font-size: 2.5rem;
+}
+.title{
+    font-weight: bold;
+    margin-right: 1rem;
+}
+.list {
+    border: 1px solid #e7e6ea;
+    background-color: #ffffff;
+    border-radius: 8px;
+    line-height: 6rem;
+    margin:1rem 0;
+}
+.wap , #contact{
+    display: none;
+}
+.talk{
+    position: fixed;
+    font-size: 20px;
+    font-weight: bold;
+    top: 270px;
+    right: 2%;
+}
+@media (max-width: 576px) {
+    body{
+        background-color: #ffffff;
+    }
+    .pc , #chat-widget-container , .connect , .talk{
+        display: none;
+    }
+    .wap{
+        display: block;
+        background: #931111;
+        padding: 0.6rem 0;
+    }
+    .wap img{
+        width: 50%;
+    }
+    span.item {
+        margin-left: 0;
+    }
+    span {
+        font-size: 12px;
+        margin-left: 3rem;
+        font-weight: bold;
+    }
+    p {
+        font-size: 2rem;
+    }
+    .list {
+        line-height: 1.6rem;
+        margin: 7px -5px;
+        padding: 0.5rem 0;
+        border: 2px solid #e7e6ea;
+    }
+    .logo {
+        width: 3rem;
+        position: absolute;
+        left: 1rem;
+        top: 0.5rem;
+    }
+    .copy-img {
+        width: 6rem;
+    }
+    .link{
+        width: 8rem;
+        margin: 0.5rem 0 0 0.5rem;
+    }
+    .col-xs-3{
+        width:20%;
+        padding:0.5rem 0 0 2rem;
+    }
+    .col-xs-5{
+        width: 46%;
+        padding-right: 0;
+        text-align: left;
+    }
+    #contact{
+        display: block;
+        margin-top: 0.4rem;
+        margin-bottom: -0.4rem;
+    }
+    .head {
+        width: 8%;
+        position: relative;
+    }
+    #contact p {
+        font-size: 1.3rem;
+        position: absolute;
+        top: 7%;
+        left:12%;
+    }
+    #contact a {
+        font-size: 17px;
+        text-decoration: underline;
+        color: #CA4444;
+        margin: 0 0.4rem;
+        font-weight: bold;
+    }
+
+}
