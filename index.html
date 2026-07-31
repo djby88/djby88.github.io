@@ -52,32 +52,47 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const letterNow = [
+       "a",
+        "b",
+        "c",
         "d",
+        "e",
+        "f",
+        "g",
+        "h",
         "i",
+        "j",
+        "k",
         "l",
+        "m",
+        "n",
+        "o",
         "p",
         "q",
         "r",
         "s",
         "t",
+        "u",
         "v",
         "w",
         "x",
+        "y",
+        "z",
       ]
       const container = document.getElementById("link-list-container")
 
       let htmlContent = ""
 
       letterNow.forEach((item, index) => {
-        const domain = `www.dj868${item}.com`
-        const fullUrl = `https://www.dj868${item}.com`
+        const domain = `www.dj188${item}.com`
+        const fullUrl = `https://www.dj188${item}.com`
 
         htmlContent += `
                     <div class="row center list">
                         <div class="col-sm-8 col-xs-5">
                             <img src="./img/logo.png" class="logo" alt="">
                             <span class="title">大奖官方地址 ${index + 1} </span>
-                            <span id="link${index}">www.dj868<span class="item">${item}</span>.com</span>
+                            <span id="link${index}">www.dj188<span class="item">${item}</span>.com</span>
                         </div>
                         <div class="col-sm-2 col-xs-3">
                             <a href="javascript:void(0);" class="copy" data-text="${domain}">
