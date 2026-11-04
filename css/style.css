@@ -202,7 +202,7 @@ span {
     flex: 0 0 46%;
     max-width: 46%;
   }
-  #link-list-container > .list > .col-xs-3 {
+  #link-list-container > .list >  {
     flex: 0 0 22%;
     max-width: 22%;
   }
@@ -270,7 +270,7 @@ span {
   }
   .col-xs-3 {
     width: 22%;
-    padding: 0.5rem 0 0 0.25rem;
+    padding: 0 0 0 0.25rem;
   }
   .col-xs-4 {
     width: 32%;
