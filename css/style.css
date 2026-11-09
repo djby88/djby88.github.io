@@ -81,11 +81,74 @@ span {
   margin-right: 1rem;
 }
 .list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
   border: 1px solid #e7e6ea;
   background-color: #ffffff;
   border-radius: 8px;
-  line-height: 6rem;
+  min-height: 6rem;
   margin: 1rem 0;
+  padding: 0.6rem 0;
+}
+#link-list-container > .list {
+  margin-left: 0;
+  margin-right: 0;
+}
+#link-list-container > .list > [class*="col-"] {
+  float: none;
+  display: flex;
+  align-items: center;
+  min-height: 5rem;
+}
+#link-list-container > .list > .col-sm-8 {
+  flex: 1 1 auto;
+  min-width: 0;
+  gap: 2.4rem;
+  padding-left: 6rem;
+  padding-right: 2rem;
+  text-align: left;
+}
+#link-list-container > .list > .col-sm-2 {
+  flex: 0 0 16.66666667%;
+  max-width: 16.66666667%;
+  justify-content: center;
+}
+.list .logo {
+  width: 4.8rem;
+  height: 4.8rem;
+  flex-shrink: 0;
+  margin: 0;
+}
+.list .title {
+  flex: 0 0 11em;
+  width: 11em;
+  margin: 0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+.list .list-domain {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0 !important;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
+.list .copy,
+.list .col-sm-2 > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+.list .copy-img,
+.list .link {
+  display: block;
+  margin: 0;
 }
 .wap,
 #contact {
@@ -146,7 +209,7 @@ span {
     top: 7%;
     left: 12%;
   }
-  #contact a {
+  .guide-star {
     font-size: 17px;
     text-decoration: underline;
     color: #ca4444;
@@ -186,6 +249,7 @@ span {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    min-height: 0;
     line-height: 1.6rem;
     margin: 7px 0;
     padding: 0.5rem 0;
@@ -195,17 +259,24 @@ span {
     margin-left: 0;
     margin-right: 0;
   }
-  #link-list-container > .list > [class*="col-xs"] {
+  #link-list-container > .list > [class*="col-"] {
     float: none;
+    min-height: 0;
   }
+  #link-list-container > .list > .col-sm-8,
   #link-list-container > .list > .col-xs-5 {
     flex: 0 0 46%;
     max-width: 46%;
+    gap: 0;
+    padding-left: 4.2rem;
+    padding-right: 0.15rem;
   }
-  #link-list-container > .list >  {
+  #link-list-container > .list > .col-sm-2.col-xs-3,
+  #link-list-container > .list > .col-xs-3 {
     flex: 0 0 22%;
     max-width: 22%;
   }
+  #link-list-container > .list > .col-sm-2.col-xs-4,
   #link-list-container > .list > .col-xs-4 {
     flex: 0 0 32%;
     max-width: 32%;
@@ -227,19 +298,25 @@ span {
     top: 0.5rem;
   }
   .list .logo {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
     left: 0.35rem;
     top: 50%;
+    margin: 0;
     transform: translateY(-50%);
   }
   .list .title,
   .list .list-domain {
     display: block;
-    margin-left: 0 !important;
+    flex: none;
+    width: auto;
+    margin: 0 !important;
     line-height: 1.25;
     font-weight: bold;
   }
   .list .title {
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.1rem !important;
     font-size: 13px;
     white-space: nowrap;
     overflow: hidden;
@@ -349,7 +426,7 @@ span {
     align-items: center;
     gap: 0.35rem;
     margin: 0 0 0 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #333;
     text-decoration: none;
