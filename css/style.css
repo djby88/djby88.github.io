@@ -115,8 +115,8 @@ span {
   justify-content: center;
 }
 .list .logo {
-  width: 4.8rem;
-  height: 4.8rem;
+  width: 5.5rem;
+  height: auto;
   flex-shrink: 0;
   margin: 0;
 }
@@ -209,13 +209,6 @@ span {
     top: 7%;
     left: 12%;
   }
-  .guide-star {
-    font-size: 17px;
-    text-decoration: underline;
-    color: #ca4444;
-    margin: 0 0.4rem;
-    font-weight: bold;
-  }
   #app.container {
     width: 100%;
     max-width: 100%;
@@ -299,12 +292,13 @@ span {
   }
   .list .logo {
     position: absolute;
-    width: 3rem;
-    height: 3rem;
+    width: 33px;
+    height: auto;
     left: 0.35rem;
     top: 50%;
     margin: 0;
     transform: translateY(-50%);
+    object-fit: contain;
   }
   .list .title,
   .list .list-domain {
@@ -388,7 +382,7 @@ span {
     align-items: center;
     justify-content: center;
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: bold;
     color: #c93535;
     line-height: 1.2;
@@ -416,18 +410,19 @@ span {
     -webkit-tap-highlight-color: transparent;
   }
   .guide-star {
-    width: 1.6rem;
-    height: 1.6rem;
+    width: auto;
+    height: 24px;
     margin-right: 0.35rem;
     flex-shrink: 0;
+    object-fit: contain;
   }
   .guide-kefu {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    margin: 0 0 0 0.5rem;
-    font-size: 1.5rem;
-    font-weight: bold;
+    margin: 0 0 0 3rem;
+    transform: translateY(1px);
+    font-size: 12px;
     color: #333;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
