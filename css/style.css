@@ -647,8 +647,8 @@ a.pc-kefu-right:visited {
     justify-content: center;
     flex-shrink: 0;
     height: 26px;
-    margin: 0 4px 0 0;
-    padding: 0 16px;
+    margin: 0;
+    padding: 19px 23px;
     font-size: 15px;
     font-weight: 700;
     line-height: 1;
