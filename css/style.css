@@ -161,13 +161,124 @@ span {
   top: 270px;
   right: 2%;
 }
+.h5-kefu-wrap {
+  display: none;
+}
+.pc-kefu-bar {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  height: 68px;
+  margin-bottom: 16px;
+  padding: 0;
+  color: #fff;
+  background-color: #c9a44a;
+  background-image: url("../img/bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.pc-kefu-left,
+.pc-kefu-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 0;
+  min-width: 0;
+  height: 100%;
+  cursor: pointer;
+}
+.pc-kefu-left {
+  gap: 10px;
+  padding-left: 36px;
+}
+.pc-kefu-right {
+  padding-right: 36px;
+}
+.pc-kefu-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.pc-kefu-text,
+.pc-kefu-online {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  white-space: nowrap;
+}
+.pc-kefu-online,
+.pc-kefu-click,
+.pc-kefu-domain {
+  display: inline-flex;
+  align-items: center;
+}
+.pc-kefu-online {
+  gap: 6px;
+}
+.pc-kefu-online svg,
+.pc-kefu-click svg {
+  display: block;
+  flex-shrink: 0;
+}
+.pc-kefu-online svg {
+  width: 30px;
+  height: 30px;
+}
+.pc-kefu-click {
+  gap: 4px;
+  height: 32px;
+  padding: 0 12px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #6a4316;
+  white-space: nowrap;
+  background: linear-gradient(180deg, #fff 0%, #f7f1e4 100%);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(120, 80, 20, 0.28);
+}
+.pc-kefu-click svg {
+  width: 20px;
+  height: 20px;
+}
+a.pc-kefu-left,
+a.pc-kefu-left:hover,
+a.pc-kefu-left:focus,
+a.pc-kefu-left:visited,
+a.pc-kefu-right,
+a.pc-kefu-right:hover,
+a.pc-kefu-right:focus,
+a.pc-kefu-right:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.pc-kefu-click,
+.pc-kefu-click:hover {
+  color: #6a4316;
+  text-decoration: none;
+}
+.pc-kefu-bar a:focus,
+.pc-kefu-bar a:active {
+  outline: none;
+  box-shadow: none;
+}
+.pc-kefu-click:focus,
+.pc-kefu-click:active {
+  box-shadow: 0 1px 2px rgba(120, 80, 20, 0.28);
+}
 .alert-warning-bar {
   background-color: #fefe9c;
   color: #c93535;
   font-size: 20px;
   font-weight: bold;
   padding: 8px 12px;
-  margin-bottom: 24px;
+  margin-bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,6 +300,7 @@ span {
   margin-right: 6px;
   flex-shrink: 0;
 }
+
 @media (max-width: 576px) {
   html,
   body {
@@ -446,7 +558,8 @@ span {
   .talk {
     display: none;
   }
-  .alert-warning-bar {
+  .alert-warning-bar,
+  .pc-kefu-bar {
     display: none;
   }
   .alert-warning-bar-h5 {
@@ -463,6 +576,95 @@ span {
   #contact > .col-xs-12 {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .h5-kefu-wrap {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 2px;
+  }
+  a.h5-kefu-bar,
+  a.h5-kefu-bar:hover,
+  a.h5-kefu-bar:focus,
+  a.h5-kefu-bar:active,
+  a.h5-kefu-bar:focus-visible,
+  a.h5-kefu-bar:visited {
+    color: #7a1a12;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0 !important;
+    outline-width: 0 !important;
+    outline-offset: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-focus-ring-color: transparent;
+  }
+  .h5-kefu-bar,
+  .h5-kefu-bar * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  .h5-kefu-bar {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    margin: 0 2px 8px;
+    padding: 0px 0px 0 9px;
+    overflow: hidden;
+    border-radius: 999px;
+    background-color: #e6c36a;
+    background-image: url("../img/h5bg.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 2px 5px rgba(120, 72, 16, 0.28);
+  }
+  .h5-kefu-avatar {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .h5-kefu-text {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0 8px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    color: #7a1a12;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .h5-kefu-domain {
+    margin-left: 0;
+    font-size: inherit;
+    font-weight: 700;
+  }
+  .h5-kefu-click {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 26px;
+    margin: 0 4px 0 0;
+    padding: 0 16px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(180deg, #e25555 0%, #c62828 100%);
+    border-radius: 999px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .h5-kefu-click:focus,
+  .h5-kefu-click:active {
+    outline: none;
+    color: #fff;
   }
   .warning-icon-h5 {
     display: inline-block;
