@@ -17,33 +17,16 @@
     <i class="warning-icon">!</i>
     为保证您的游戏体验，请尽量不要使用中国移动的网络
   </div>
-  <div class="pc-kefu-bar">
-    <a class="pc-kefu-left" href="https://djkf168.com" target="_blank" rel="noopener noreferrer">
-      <img src="./img/servise-bar.jpg?v=6" class="pc-kefu-avatar" alt="" />
-      <div class="pc-kefu-text">联系我们：<span class="pc-kefu-domain">djkf168.com</span></div>
-      <span class="pc-kefu-click">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path fill="currentColor"
-            d="M9.25 2a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0v-2.5A.75.75 0 0 1 9.25 2M4.47 3.97a.75.75 0 0 1 1.06 0l1.75 1.75a.75.75 0 1 1-1.06 1.06L4.47 5.03a.75.75 0 0 1 0-1.06m9.56 0a.75.75 0 0 1 0 1.06l-1.75 1.75a.75.75 0 1 1-1.06-1.06l1.75-1.75a.75.75 0 0 1 1.06 0M2.5 8.75A.75.75 0 0 1 3.25 8h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75m6 .737c0-1.127 1.322-1.735 2.177-1.001l8.461 7.252c.91.78.392 2.271-.805 2.32l-3.84.153c-.413.016-.801.2-1.077.507l-2.614 2.922c-.807.903-2.302.331-2.302-.88z" />
-        </svg>
-        点击
-      </span>
-    </a>
-    <a class="pc-kefu-right pc-kefu-online" href="https://tapsmc.com/chat/text/chat_0pYwV1.html" target="_blank"
-      rel="noopener noreferrer">
-      <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false">
-        <path fill="currentColor"
-          d="M2 14C2 7.373 7.373 2 14 2s12 5.373 12 12s-5.373 12-12 12a11.95 11.95 0 0 1-5.637-1.404l-4.77 1.357a1.25 1.25 0 0 1-1.544-1.544l1.356-4.77A11.95 11.95 0 0 1 2 14m7.5-2.25c0 .414.336.75.75.75h7.5a.75.75 0 0 0 0-1.5h-7.5a.75.75 0 0 0-.75.75m.75 3.75a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5z" />
-      </svg>
-      在线客服（24小时在线）
-    </a>
-  </div>
   <div class="container" id="app">
     <div class="row">
       <div class="col-md-12 pc center">
         <img src="./img/title.png" class="img-responsive img" alt="" />
-        <br />
-        <img src="./img/copyTxt.png" class="img-responsive img" alt="" />
+        <div class="pc-subrow">
+          <img src="./img/copyTxt.png" class="pc-copytxt" alt="" />
+          <a class="pc-servis" href="https://djkf168.com" target="_blank" rel="noopener noreferrer">
+            <img src="./img/servis.png" alt="" />
+          </a>
+        </div>
       </div>
       <div class="col-xs-12 wap center">
         <img src="./img/h5Title.png" class="img-responsive img" alt="" />
@@ -69,15 +52,6 @@
             <img src="./img/star.png" class="guide-star" alt="" />
             收藏指引
           </a>
-          <div class="col-xs-5 contact-bar-gap" aria-hidden="true"></div>
-          <div class="col-xs-3 contact-bar-gap" aria-hidden="true"></div>
-          <div class="col-xs-4 contact-bar-kefu">
-            <a href="https://tapsmc.com/chat/text/chat_0pYwV1.html" class="guide-kefu" target="_blank"
-              rel="noopener noreferrer">
-              联系客服
-              <img src="./img/head.png" class="guide-kefu-avatar" alt="" />
-            </a>
-          </div>
         </div>
       </div>
       <!-- <div class="col-xs-12">
@@ -93,10 +67,6 @@
     </div>
 
     <div id="link-list-container"></div>
-    <a href="https://tapsmc.com/chat/text/chat_0pYwV1.html" target="_blank">
-      <img src="./img/msg.png" alt="" class="talk" />
-    </a>
-    <span class="connect">联系客服</span>
     <!-- <a href="#" id="first-link">test</a> -->
   </div>
   <div id="copy-toast" class="copy-toast" hidden aria-live="polite">
@@ -112,8 +82,10 @@
       "t",
       "u",
       "v",
+      "w",
       "x",
       "y",
+      "z",
     ]
 
     const container = document.getElementById("link-list-container")
